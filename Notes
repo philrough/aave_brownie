@@ -1,0 +1,23 @@
+Aave is a Lending / Borrowing DAO
+- Depositors can deposit tokens and earn interest on the deposit
+    Depositors earn a passive income while maintaining exposure to the owned asset
+- Borrows can borrow tokens for a small interest fee
+    Borrowers gain market opportunity where the token price rises to offset the borrowing rate.
+    Depositor Borrowers maintain exposure to the owned asset + exposure to the borrowed asset
+
+Aave has a mainnet and testnet
+- Testing can be done in the Kovan network
+- Testing can also be done on the mainnet-fork
+
+Eth is not a swappable erc20 contract. As such, it needs to be swapped for WETH (wrapped eth)  via the Weth contract or an exchange (sushiswap)
+
+Depositors deposit Weth and receive interest bearing Aave interst bearing weth (aWETH)
+Depositors can withdraw the deposited wEth by exchanging for the aWETH
+
+Borrowers can borrow another token based on their deposited amount (collateral).
+
+Aave operates a variety of lending pools
+ - Lending pools are provided via the LendingPoolAddressesProvider interface
+
+Chainlink offers price feeds to determine the current exchange rate of tokens
+  - Oracles use Chanlink price feeds
